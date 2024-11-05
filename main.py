@@ -109,6 +109,9 @@ def task_3() -> None:
     # Подготовка данных для построения гистограммы
     graph_data: nmp.ndarray = nmp.array(new_data)
 
+    print('Средняя цена дивана: ', round(nmp.mean(graph_data),2))
+
+    # Построение гистограммы
     plt.hist(graph_data, bins=20)
     plt.xlabel('Цена')
     plt.ylabel('Частота')
