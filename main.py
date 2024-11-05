@@ -92,7 +92,6 @@ def csv_loader() -> list[int]:
 
 def task_3() -> None:
     csv_path: Path = Path('csv_data/price.csv')
-    new_data: list[int] = []
 
     if csv_path.is_file():
         print('Файл price.csv находится в папке csv_data')
