@@ -77,6 +77,7 @@ def csv_saver(data: list[int]) -> None:
             writer.writerow([one_item])
     print('Файл price.csv успешно сохранен!')
 
+
 def csv_loader() -> list[int]:
     csv_path: Path = Path('csv_data/price.csv')
 
