@@ -1,5 +1,4 @@
 pip>=24.2
-Tcl>=0.2
 setuptools>=75.2.0
 wheel>=0.44.0
 numpy>=2.1.3

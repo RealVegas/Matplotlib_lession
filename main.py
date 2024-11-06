@@ -78,7 +78,7 @@ def csv_saver(data: list[int]) -> None:
     print('Файл price.csv успешно сохранен!')
 
 
-def csv_loader() -> list[int]:
+def csv_loader() -> list[csv.reader]:
     csv_path: Path = Path('csv_data/price.csv')
 
     with open(csv_path, 'r', newline='', encoding='utf-8') as csv_read:
@@ -109,7 +109,7 @@ def task_3() -> None:
     # Подготовка данных для построения гистограммы
     graph_data: nmp.ndarray = nmp.array(new_data)
 
-    print('Средняя цена дивана: ', round(nmp.mean(graph_data),2))
+    print(f'Средняя цена дивана: {round(nmp.mean(graph_data), 2)} ₽')
 
     # Построение гистограммы
     plt.hist(graph_data, bins=20)
